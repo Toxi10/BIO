@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#ff932f">
 <style id="applicationStylesheet" type="text/css">
 
-	html { overflow-y: hidden; }
+	html { overflow: hidden; }
 
 	.mediaViewInfo {
 		--web-view-name: Web 1920 – 1;
@@ -33,7 +33,7 @@
 	#Web_1920__1 {
 		position: absolute;
 		width: 1920px;
-		height: 1080px;
+        height: 1080px;
 		overflow: hidden;
 		--web-view-name: Web 1920 – 1;
 		--web-view-id: Web_1920__1;
@@ -475,6 +475,12 @@
 	#BURGERBOT:hover {
         cursor: pointer;
     }
+	@media only screen and (max-width: 1400px) {
+	  #Web_1920__1 {
+        transform: scale(0.8);
+	  }
+	}
+	
 </style>
 <script id="applicationScript">
 
