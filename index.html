@@ -11,8 +11,9 @@
 <meta property="og:url" content="https://toxi10.github.io/BIO/" />
 <meta property="og:image" content="assets/images/avatar.png" />
 <meta name="theme-color" content="#ff932f">
+<script src="https://cdn.rawgit.com/adriancooney/console.image/c9e6d4fd/console.image.min.js"></script>
 <style id="applicationStylesheet" type="text/css">
-	
+
 	html { overflow: hidden; }
 
 	.mediaViewInfo {
@@ -3304,7 +3305,7 @@ window.application = new Application();
 	}
 </style>
 </head>
-<body style="background-color: #ff932f">
+<body style="background-color: #ff932f" onload="onLoad()">
 <div id="Web_1920__1">
 	<svg class="Rettangolo_1">
 		<rect id="Rettangolo_1" rx="10" ry="10" x="0" y="0" width="1148" height="555">
@@ -3331,6 +3332,11 @@ window.application = new Application();
 	<img id="avatar" src="assets/images/avatar.png" srcset="assets/images/avatar.png 1x, assets/images/avatar@2x.png 2x">
 
 	<script>
+
+		function onLoad() {
+			console.image("assets/images/welcome.png");
+		}
+
 		function DiscordLink() {
 			window.open("https://discord.gg/eZpAEuS", "_blank")
 		}
